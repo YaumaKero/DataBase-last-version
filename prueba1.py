@@ -28,56 +28,6 @@ for archivo in os.listdir(directorio):
 # Combina los DataFrames utilizando la función concat
 df_combined = pd.concat(dataframes, ignore_index=True)
 
-
-
-
-
-
-
-
-
-
-
-# # Crear un DataFrame vacío para almacenar los resultados
-# df_combinado = pd.DataFrame(columns=df_combined.columns)
-
-# # Iterar a través de las filas del DataFrame original
-# for nombre, grupo in df_combined.groupby("Compañia"):
-#     # Si hay múltiples filas con el mismo nombre
-#     if len(grupo) > 1:
-#         rows_equal_except_missing = []
-
-#         # Verificar si todas las columnas (excepto las que tienen valores faltantes) son iguales
-#         columns_with_missing = grupo.iloc[0].isna() | grupo.iloc[1].isna()
-#         if grupo.iloc[0][columns_with_missing].equals(grupo.iloc[1][columns_with_missing]):
-#             rows_equal_except_missing.append(grupo.iloc[0].fillna(grupo.iloc[1]))
-        
-#         # Comprobar si hay más filas con igualdad en las columnas excepto las que tienen valores faltantes
-#         for i in range(1, len(grupo)):
-#             if grupo.iloc[0][columns_with_missing].equals(grupo.iloc[i][columns_with_missing]):
-#                 rows_equal_except_missing.append(grupo.iloc[i])
-
-#         # Si hay al menos una fila con igualdad en las columnas excepto las que tienen valores faltantes
-#         if rows_equal_except_missing:
-#             # Combinar todas las filas con igualdad
-#             combined_row = pd.concat(rows_equal_except_missing).groupby(level=0).first()
-#             df_combinado = pd.concat([df_combinado, combined_row.to_frame().T], ignore_index=True)
-#         else:
-#             # Mantener las filas separadas
-#             df_combinado = pd.concat([df_combinado, grupo], ignore_index=True)
-#     else:
-#         df_combinado = pd.concat([df_combinado, grupo], ignore_index=True)
-
-# # Guardar el DataFrame combinado en el mismo archivo CSV "Basedatos"
-# df_combinado.to_csv("Basedatos.csv", index=False)
-
-
-
-
-
-
-
-
 # Ordenar por numero trabajadores
 df_combined = df_combined.sort_values(by=["Num. trabajadores"], ascending=False)
 
