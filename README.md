@@ -1,10 +1,14 @@
 # DataBase-last-version
 
-main_v1----------
+mainpublicas_v1----------
 
 de json a csv
 juntamos csv
 ordenamos por trabajdores
 ponemos id
 
-main_v2---------
+mainpublicas_v2---------
+
+juntar filas iguales con valores faltantes
+eliminar filas iguales
+eliminar filas vacias
