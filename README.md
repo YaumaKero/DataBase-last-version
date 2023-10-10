@@ -14,6 +14,7 @@ eliminar filas iguales
 eliminar filas vacias
 
 mainpublicas_v3--------------------------------------
+
 eliminar espacios
 ignorar mayusculas, minusculas acentos
 
