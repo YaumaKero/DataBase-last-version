@@ -2,7 +2,7 @@ import pandas as pd
 import os
 import json
 import csv
-import convertidor
+import convertidor_v1
 
 # Nombre de la carpeta JSON de entrada y CSV de salida
 directorio_json = 'C:/Users/jaume/Documents/VISUAL CODES/PAE/PAE-basedatos/publicos'
@@ -13,7 +13,7 @@ dataframes = []
 
 # Itera a través de los archivos JSON y los convierte a CSV
 for archivo_json in archivos_json:
-    convertidor.convertir_json_a_csv(archivo_json)
+    convertidor_v1.convertir_json_a_csv(archivo_json)
 
 # Directorio que contiene los archivos CSV
 directorio = 'C:/Users/jaume/Documents/VISUAL CODES/PAE'
