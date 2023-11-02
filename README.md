@@ -17,6 +17,8 @@ mainpublicas_v3--------------------------------------
 
 eliminar espacios
 ignorar mayusculas, minusculas acentos
+filtro de ID por EV añadido
+todas las columnas raras separadas para hacer graficas
 
 
 
