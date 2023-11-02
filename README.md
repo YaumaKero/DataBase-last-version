@@ -20,6 +20,11 @@ ignorar mayusculas, minusculas acentos
 filtro de ID por EV añadido
 todas las columnas raras separadas para hacer graficas
 
+main_privadas_v2---------------------------------
+Convierte cada json a csv y los junta en el csv final.
+Passa a minusculas
+Elimina las transacciones de antes de 2015
+Pone un ID
 
 
 
