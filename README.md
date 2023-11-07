@@ -26,6 +26,11 @@ Passa a minusculas
 Elimina las transacciones de antes de 2015
 Pone un ID
 
+main_privadas_v3---------------------------------
+Supone el 100% de porcentaje adquirido si no lo hay
+Los años son ints
+Ya no dan error los nulls ni ""
+
 
 
 
