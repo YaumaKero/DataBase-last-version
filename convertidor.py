@@ -5,7 +5,6 @@ import csv
 #directorio
 directorio_json = 'C:/Users/jaume/Documents/VISUAL CODES/PAE/PAE-basedatos/publicos'
 
-
 #FUNCIO QUE ES FARA PER A CADA ARXIU DE LA CARPETA
 def convertir_json_a_csv(archivo_json):
     archivo_csv = os.path.splitext(archivo_json)[0] + '.csv'
@@ -34,9 +33,4 @@ def convertir_json_a_csv(archivo_json):
         
     print(f"Se ha convertido el archivo JSON '{archivo_json}' en el archivo CSV '{archivo_csv}'.")
 
-
-
 print("Se han convertido los archivos JSON en archivos CSV.")
-
-
-
